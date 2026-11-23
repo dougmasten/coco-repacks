@@ -1,0 +1,18 @@
+# Original disks and everything built from them
+**/bin/*
+!**/bin/README.md
+**/extracted/
+**/assets/
+**/project.yaml
+**/build/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+*.swp
+*~
+.DS_Store
+.vscode/
+.idea/

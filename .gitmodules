@@ -1,0 +1,3 @@
+[submodule "dmpkg"]
+	path = tools/dmpkg
+	url = git@github.com:dougmasten/dmpkg.git
