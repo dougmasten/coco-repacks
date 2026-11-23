@@ -18,4 +18,4 @@ git clone --recurse-submodules <this repo>
 git submodule update --init
 ```
 
-Then put the original disks in `repacks/<game>/bin/` and run `cd repacks/<game> && make all`. You need python3 (with PyYAML) and lwasm. Each Makefile finds dmpkg at `../../tools/dmpkg`; override with `DMPKG=` to use another checkout.
+Then put the original disks in `repacks/<game>/bin/` and run `cd repacks/<game> && make all`, or from the top level `make <game>` (or `make all` for every repack). The top-level Makefile checks out the submodule if it's missing; `make submodules` re-syncs it to the recorded commit and `make update` moves it to the latest upstream commit. You need python3 (with PyYAML) and lwasm. Each Makefile finds dmpkg at `../../tools/dmpkg`; override with `DMPKG=` to use another checkout.
